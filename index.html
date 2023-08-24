@@ -53,6 +53,21 @@
                         </li>
                         <li class="nav-item">
                             <button id="btnCarrito" type="button" class="btn btn-primary m-2">Carrito</button>
+                            <div id="carrito">
+                                <table id="lista-carrito" class="u-full-width">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                            <th>Cantidad</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                                <a href="#" id="vaciar-carrito" class="boton u-full-width">Vaciar Carrito</a>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -96,41 +111,44 @@
 
         <div class="container">
             <section class="row">
-                <div class="col-12 d-flex justify-content-evenly flex-wrap">
+                <div id= lista-productos class="col-12 d-flex justify-content-evenly flex-wrap">
                     <div class="cajaprincipal">
                         <img class="card-img-top" src="./images/taza ceramica.png" alt="Taza Ceramica">
                         <h1>Taza Cerámica A</h1>
-                        $15.00
-                        <button id="btnAgregarCarrito1" type="button" class="btn btn-secondary btn-lg">Agregar al carrito</button>
+                        <span class="precio">$15.00</span>
+                        <button id="btnAgregarCarrito1" type="button" class="btn btn-secondary btn-lg agregar-carrito">Agregar al carrito</button>
                     </div>
                     <div class="cajaprincipal">
                         <img class="card-img-top" src="./images/taza magica.png" alt="Taza Magica">
                         <h1>Taza Mágica A.</h1>
-                        <span class="text-muted text-decoration-line-through">$50.00</span> $25.00
-                        <button id="btnAgregarCarrito2" type="button" class="btn btn-secondary btn-lg">Agregar al carrito</button>
+                        <span class="text-muted text-decoration-line-through">$50.00</span> 
+                        <span class="precio">$25.00</span>
+                        <button id="btnAgregarCarrito2" type="button" class="btn btn-secondary btn-lg agregar-carrito">Agregar al carrito</button>
                     </div>
                     <div class="cajaprincipal">
                         <img class="card-img-top" src="./images/taza plastica.png" alt="Taza Plastica">
                         <h1>Taza Plástica A</h1>
-                        $15.00
-                        <button id="btnAgregarCarrito3" type="button" class="btn btn-secondary btn-lg">Agregar al carrito</button>
+                        <span>$15.00</span>
+                        <button id="btnAgregarCarrito3" type="button" class="btn btn-secondary btn-lg agregar-carrito">Agregar al carrito</button>
                     </div>
                     <div class="cajaprincipal">
                         <img class="card-img-top" src="./images/taza ceramica.png" alt="Taza Ceramica">
                         <h1>Taza Cerámica B</h1>
-                        $15.00
-                        <button id="btnAgregarCarrito4" type="button" class="btn btn-secondary btn-lg">Agregar al carrito</button>
+                        <span>$15.00</span>
+                        <button id="btnAgregarCarrito4" type="button" class="btn btn-secondary btn-lg agregar-carrito">Agregar al carrito</button>
                     </div>
                     <div class="cajaprincipal">
                         <img class="card-img-top" src="./images/taza magica.png" alt="Taza Magica">
                         <h1>Taza Mágica B</h1>
-                        <span class="text-muted text-decoration-line-through">$50.00</span> $25.00
-                        <button id="btnAgregarCarrito5" type="button" class="btn btn-secondary btn-lg">Agregar al carrito</button>
+                        <span class="text-muted text-decoration-line-through">$50.00</span> 
+                        <span class="precio">$25.00</span>
+                        <button id="btnAgregarCarrito5" type="button" class="btn btn-secondary btn-lg agregar-carrito">Agregar al carrito</button>
                     </div>
                     <div class="cajaprincipal">
                         <img class="card-img-top" src="./images/taza plastica.png" alt="Taza Plastica">
-                        <h1>Taza Plástica B</h1> $15.00
-                        <button id="btnAgregarCarrito6" type="button" class="btn btn-secondary btn-lg">Agregar al carrito</button>
+                        <h1>Taza Plástica B</h1> 
+                        <span class="precio">$15.00</span>
+                        <button id="btnAgregarCarrito6" type="button" class="btn btn-secondary btn-lg agregar-carrito">Agregar al carrito</button>
                     </div>
                 </div>
             </section>
